@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="img/imagen recortada (1).ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="encriptador_header">
+        <img class="encriptador_header_titulo_img" src="img/imagen recortada.png" alt="Logo">
+        <h1 class="encriptador_header_titulo">Encriptador de Textos</h1>
+    </header>
+    <main class="encriptador_main">
+
+        <section class="encriptador_contenedor">
+
+            <div class="contenedor">
+                
+                    <textarea  class="contenedor_parrafo1" id="inputTexto" placeholder="Introduce el texto a encriptar aqui!"></textarea>
+                    
+                    <div class="advertencia">
+                        <img class="advertencia_img" src="img/icons8-error-48.png" alt="icono de advertencia">
+                        <p class="advertencia_img_parrafo">Solo escribir letras minusculas</p>
+                    </div>
+                    
+                
+                <div class="contenedor_botones">
+                    <button onclick="encriptarTexto()" class="encriptador_main_parrafo1_boton1">Encriptar</button>
+                    <button onclick="desencriptarTexto()" class="encriptador_main_parrafo1_boton2">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <div class="contenedor_parrafo2">
+
+            <p id="textoEncriptado" class="encriptador_main_parrafo2">
+                <div class="encriptador_main_parrafo2_contenido">
+                    <img class="encriptador_main_parrafo2_img2" src="img/SEO-pana (1).png" alt="ilustracion en espera">
+                    <h3 class="encriptador_main_parrafo2_sudtitulo1">Ningun mensaje fue encontrado</h3>
+                    <h5 class="encriptador_main_parrafo2_sudtitulo2">ingrese el texto que desea encriptar o desencriptar</h5>
+                </div>
+                
+            </p>
+            <button class="copiarEstilo" id="copiar" onclick="copiarTexto()">Copiar</button>
+            
+            
+        </div>
+        
+    </main>
+    <footer>
+        <p class="footer">Desarrollado por Amsys Sulibeth</p>
+
+    </footer>
+    <script src="app.js"></script>
+    
+</body>
+</html>
